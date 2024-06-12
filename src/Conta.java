@@ -1,18 +1,18 @@
-public class Conta {
+public abstract class Conta {
 
-    private int numero;
+    protected int numero;
 
     private Cliente dono;
 
-    private double saldo;
+    protected double saldo;
 
-    private double limite;
+    protected double limite;
 
     private Operacao[] operacoes;
 
     private int proximaOperacao;
 
-    private static int totalContas = 0;
+    protected static int totalContas = 0;
 
     public Conta(int numero, Cliente dono, double saldo, double limite) {
         this.numero = numero;
@@ -26,6 +26,8 @@ public class Conta {
         Conta.totalContas++;
     }
 
+    public Conta() {
+    }
 
 
     public boolean sacar(double valor) {
@@ -118,11 +120,6 @@ public class Conta {
     public void setDono(Cliente dono) {
         this.dono = dono;
     }
+    public abstract boolean setLimite(double limite);
 
-    public void setLimite(double limite) {
-        if (limite < 0)
-            limite = 0;
-
-        this.limite = limite;
-    }
 }
