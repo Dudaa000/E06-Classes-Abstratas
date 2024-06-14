@@ -26,9 +26,6 @@ public abstract class Conta {
         Conta.totalContas++;
     }
 
-    public Conta() {
-    }
-
 
     public boolean sacar(double valor) {
         if (valor >= 0 && valor <= this.limite) {
@@ -120,6 +117,7 @@ public abstract class Conta {
     public void setDono(Cliente dono) {
         this.dono = dono;
     }
+
     public abstract boolean setLimite(double limite);
 
 }

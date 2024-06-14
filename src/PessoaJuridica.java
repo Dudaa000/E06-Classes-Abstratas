@@ -18,13 +18,13 @@ public class PessoaJuridica extends Cliente {
 
     @Override
     public String toString() {
-        String PJstr = "--------------- PJ ---------------" +
-                "Nome: " + this.getNome() +
-                "Data: " + this.getData() +
-                "Endereco: " + this.getEndereco() +
-                "CNPJ: " + cnpj +
-                "Número de Funcionários: " + numFuncionarios +
-                "Setor: " + setor +
+        String PJstr = "--------------- PJ ---------------\n" +
+                "Nome: " + this.getNome() + "\n" +
+                "Data: " + this.getData() + "\n" +
+                "Endereco: " + this.getEndereco() + "\n" +
+                "CNPJ: " + cnpj + "\n" +
+                "Número de Funcionários: " + numFuncionarios + "\n" +
+                "Setor: " + setor + "\n" +
                 "----------------------------------";
         return PJstr;
     }

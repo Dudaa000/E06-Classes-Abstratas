@@ -6,7 +6,6 @@
  */
 
 import java.util.Date;
-
 /**
  * Classe responsável por registrar operações de saque e depósitos realizados em contas correntes.
  */

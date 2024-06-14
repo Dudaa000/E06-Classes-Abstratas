@@ -1,6 +1,6 @@
 public class ContaCorrente extends Conta{
-    public ContaCorrente(Cliente dono, double limite, double saldo, int numero) {
-        super(dono, saldo, numero);
+    public ContaCorrente(int numero, Cliente dono, double saldo, double limite) {
+        super(numero,dono,saldo,limite);
         setLimite(limite);
     }
 
