@@ -79,7 +79,6 @@ public abstract class Conta {
         }
     }
 
-
     public void imprimirExtrato() {
         System.out.println("======= Extrato Conta " + this.numero + "======");
         for(Operacao atual : this.operacoes) {

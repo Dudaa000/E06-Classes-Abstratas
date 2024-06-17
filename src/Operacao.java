@@ -21,6 +21,7 @@ public abstract class Operacao {
     private double valor;
 
     private static int totalOperacoes = 0;
+
     /**
      * Construtor. Inicializa uma nova instância da classe Operacao onde a data da operação é exatamente a data
      * da criação da classe.
