@@ -30,7 +30,6 @@ public class PessoaJuridica extends Cliente {
     }
 
 
-
     public boolean equals(Object obj) {
         if(obj instanceof PessoaJuridica) {
             PessoaJuridica objPJ = (PessoaJuridica) obj;
