@@ -9,4 +9,3 @@ public class OperacaoDeposito extends Operacao {
         return depositoStr;
     }
 }
-
